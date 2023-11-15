@@ -5,7 +5,7 @@ Deep Deterministic Policy Gradient (DDPG) is a reinforcement learning algorithm 
 DDPG consists of three main components:
 - Actor: The actor is a neural network that outputs the deterministic policy π(s). The policy is a function that maps states to actions. The actor is trained to maximize the expected future reward.
 - Critic: The critic is a neural network that estimates the action-value function Q(s,a). The action-value function is a function that predicts the expected future reward for a given state and action. The critic is trained to minimize the Bellman error, which is the difference between the predicted future reward and the actual future reward.
-- Replay Buffer: The replay buffer is a data structure that stores experiences, which are tuples of the form (s, a, r, s', done), where:
+- Replay Buffer: The replay buffer is a data structure that stores experiences, which are tuples of the form (s, a, r, s', done), where
 s is the state
 a is the action
 r is the reward
@@ -27,11 +27,14 @@ Improments on DDPG:
 - Normalization: DDPG normalizes the state and reward inputs to the actor and critic networks. This helps to improve the stability of the training process and prevent the networks from becoming too sensitive to the scale of the inputs.
 - Exploration: DDPG uses an exploration strategy to encourage the agent to try new actions and avoid getting stuck in local optima. This is done by adding noise to the actions output by the actor network. The amount of noise is gradually reduced as the agent learns, which allows it to exploit the actions that it knows are good.
 
+In this experiments, we tested all the settings suggested in the Benchmark Implementation section. The results presented here are made from creating samples from 20 agents, reducing the amount of noise at sampling actions step without performing clipping the gradients and minimizing the number of updates in 1 episode.
 
 Training result:
+
 ![plot](scores.png)
+
 The environment was solved in 119 episodes with Average Score is 30.16
 
 # Improvement 
-We can improve the algorithm by Prioritized Experience Relay (Create a weight for to assign priorities to each tuple with larger errors when sampling) or Dueling DQN with estimation the state values and state-action values as desired Q-values.
+We can improve the stability of the training process by normalizing input states or performing clipping gradients. At the same time, we can also assign weight to samples at sampling from the experience buffer to create a more meaningful sample, or perform noise reduction when the model is close to converging to achieve better results.
 
