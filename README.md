@@ -28,6 +28,7 @@ In order to solve the environment, the agent must get an average score of +30 ov
 4. You can loading the pretrained model weight by following:
 ```
 agent.qnetwork_local.load_state_dict(torch.load('checkpoint.pth'))
+```
 
 ## Visualizing Results
 
