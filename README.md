@@ -4,7 +4,7 @@ A project for training a double-jointed arm be able to reach target locations us
 ## Project Description
 [//]: # (Image References)
 
-[image1]: [https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif](https://video.udacity-data.com/topher/2018/June/5b1ea778_reacher/reacher.gif) "Trained Agent"
+[image1]: https://video.udacity-data.com/topher/2018/June/5b1ea778_reacher/reacher.gif "Trained Agent"
 
 ![Trained Agent][image1]
 
