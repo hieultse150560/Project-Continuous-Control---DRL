@@ -14,7 +14,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 For this project, there are two separate versions of the Unity environment:
 - The first version contains a single agent.
-- The second version contains 20 identical agents, each with its own copy of the environment. The task is episodic, and in order to solve the environment, the agent must get at least an average score of +13 over 100 consecutive episodes.
+- The second version contains 20 identical agents, each with its own copy of the environment. 
 
 In order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
 ## Getting Started
