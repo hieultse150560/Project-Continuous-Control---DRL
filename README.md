@@ -19,16 +19,13 @@ For this project, there are two separate versions of the Unity environment:
 In order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
 ## Getting Started
 
-1. Download the entire repository and unzip (or decompress) the python.taz
+1. Download the entire repository and unzip (or decompress) the python.zip
 
 2. Place the "python" folder in the working folder.
 
-3. Follow the instructions in `Navigation.ipynb` to get started with training the agent! You can change the hyperparameter as well!
+3. Follow the instructions in `Continuous_Control.ipynb` to get started with training the agent! You can try tuning the hyperparameter as well!
 
-4. You can loading the pretrained model weight by following:
-```
-agent.qnetwork_local.load_state_dict(torch.load('checkpoint.pth'))
-```
+4. You can also load the pretrained model weight provided to see how the agents work.
 
 ## Visualizing Results
 
