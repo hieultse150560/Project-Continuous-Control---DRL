@@ -34,4 +34,4 @@ agent.qnetwork_local.load_state_dict(torch.load('checkpoint.pth'))
 
 The environment was solved in 119 episodes with	Average Score is 30.16
 
-![plot](result.png)
+![plot](scores.png)
